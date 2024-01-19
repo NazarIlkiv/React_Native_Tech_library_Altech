@@ -1,10 +1,20 @@
-import { View, Text } from "react-native";
+import { View, Text, SafeAreaView, ScrollView } from "react-native";
 import React from "react";
+import { Stack } from "expo-router";
+
+import { COLORS, SIZES, FONT } from "../../constants/theme";
 
 export default function library() {
   return (
-    <View>
-      <Text>library</Text>
-    </View>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: COLORS.lightWhite,
+      }}
+    >
+      <Text>Hi</Text>
+    </SafeAreaView>
   );
 }

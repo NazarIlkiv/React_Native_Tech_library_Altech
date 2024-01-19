@@ -1,14 +1,178 @@
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 import React from "react";
 import { Tabs } from "expo-router";
 
+import icons from "../../constants/images";
+import { COLORS, FONT, SIZES } from "../../constants/theme";
+
 export default function TabsLayout() {
   return (
-    <Tabs>
-      <Tabs.Screen name="home" options={{ headerTitle: "" }} />
-      <Tabs.Screen name="library" options={{ headerTitle: "" }} />
-      <Tabs.Screen name="news" options={{ headerTitle: "" }} />
-      <Tabs.Screen name="contact" options={{ headerTitle: "" }} />
+    <Tabs
+      screenOptions={{
+        headerShown: false,
+        tabBarStyle: {
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          height: 72,
+          elevation: 0,
+          backgroundColor: COLORS.lightWhite,
+        },
+      }}
+    >
+      <Tabs.Screen
+        name="home"
+        options={{
+          title: "",
+          tabBarIcon: ({ focused }: { focused: boolean }) => {
+            return (
+              <View
+                style={{
+                  alignItems: "center",
+                  paddingTop: 16,
+                  borderTopColor: focused
+                    ? COLORS.lightGrey
+                    : COLORS.lightWhite,
+                  borderTopWidth: 2,
+                }}
+              >
+                <Image
+                  source={focused ? icons.home : icons.home}
+                  contentFit="contain"
+                  style={{
+                    height: 24,
+                    width: 24,
+                    tintColor: focused ? COLORS.lightGrey : "black",
+                  }}
+                />
+                <Text
+                  style={{
+                    fontSize: SIZES.small,
+                    color: focused ? COLORS.lightGrey : "black",
+                  }}
+                >
+                  Home
+                </Text>
+              </View>
+            );
+          },
+        }}
+      />
+      <Tabs.Screen
+        name="library"
+        options={{
+          title: "",
+          tabBarIcon: ({ focused }: { focused: boolean }) => {
+            return (
+              <View
+                style={{
+                  alignItems: "center",
+                  paddingTop: 16,
+                  borderTopColor: focused
+                    ? COLORS.lightGrey
+                    : COLORS.lightWhite,
+                  borderTopWidth: 2,
+                }}
+              >
+                <Image
+                  source={focused ? icons.sketch : icons.sketch}
+                  contentFit="contain"
+                  style={{
+                    height: 24,
+                    width: 24,
+                    tintColor: focused ? COLORS.lightGrey : "black",
+                  }}
+                />
+                <Text
+                  style={{
+                    fontSize: SIZES.small,
+                    color: focused ? COLORS.lightGrey : "black",
+                  }}
+                >
+                  Library
+                </Text>
+              </View>
+            );
+          },
+        }}
+      />
+      <Tabs.Screen
+        name="news"
+        options={{
+          title: "",
+          tabBarIcon: ({ focused }: { focused: boolean }) => {
+            return (
+              <View
+                style={{
+                  alignItems: "center",
+                  paddingTop: 16,
+                  borderTopColor: focused
+                    ? COLORS.lightGrey
+                    : COLORS.lightWhite,
+                  borderTopWidth: 2,
+                }}
+              >
+                <Image
+                  source={focused ? icons.news : icons.news}
+                  contentFit="contain"
+                  style={{
+                    height: 24,
+                    width: 24,
+                    tintColor: focused ? COLORS.lightGrey : "black",
+                  }}
+                />
+                <Text
+                  style={{
+                    fontSize: SIZES.small,
+                    color: focused ? COLORS.lightGrey : "black",
+                  }}
+                >
+                  News
+                </Text>
+              </View>
+            );
+          },
+        }}
+      />
+      <Tabs.Screen
+        name="contact"
+        options={{
+          title: "",
+          tabBarIcon: ({ focused }: { focused: boolean }) => {
+            return (
+              <View
+                style={{
+                  alignItems: "center",
+                  paddingTop: 16,
+                  borderTopColor: focused
+                    ? COLORS.lightGrey
+                    : COLORS.lightWhite,
+                  borderTopWidth: 2,
+                }}
+              >
+                <Image
+                  source={focused ? icons.chat : icons.chat}
+                  contentFit="contain"
+                  style={{
+                    height: 24,
+                    width: 24,
+                    tintColor: focused ? COLORS.lightGrey : "black",
+                  }}
+                />
+                <Text
+                  style={{
+                    fontSize: SIZES.small,
+                    color: focused ? COLORS.lightGrey : "black",
+                  }}
+                >
+                  Contact
+                </Text>
+              </View>
+            );
+          },
+        }}
+      />
     </Tabs>
   );
 }

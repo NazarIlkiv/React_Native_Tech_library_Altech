@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   openLibBtn: {
     marginTop: 20,
     marginBottom: 20,
-    padding: 15,
+    padding: 20,
     flexDirection: "row",
     justifyContent: "left",
     alignItems: "center",

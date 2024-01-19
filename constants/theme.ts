@@ -1,5 +1,6 @@
 export const COLORS = {
   lightWhite: "#FAFAFC",
+  lightGrey: "#A0A0A0",
 };
 
 export const FONT = {

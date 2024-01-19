@@ -1,10 +1,19 @@
-import { View, Text } from "react-native";
+import { View, Text, SafeAreaView } from "react-native";
 import React from "react";
+
+import { COLORS, SIZES, FONT } from "../../constants/theme";
 
 export default function contact() {
   return (
-    <View>
-      <Text>contact</Text>
-    </View>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: COLORS.lightWhite,
+      }}
+    >
+      <Text>Hi</Text>
+    </SafeAreaView>
   );
 }
