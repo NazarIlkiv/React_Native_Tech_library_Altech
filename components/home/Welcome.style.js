@@ -5,6 +5,7 @@ import { COLORS, FONT, SIZES } from "../../constants/theme";
 const styles = StyleSheet.create({
   container: {
     width: "100%",
+    marginTop: 20,
   },
   hero: {
     justifyContent: "center",

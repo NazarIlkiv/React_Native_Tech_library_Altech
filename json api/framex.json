@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "Framex 10",
+    "type": "Холодна віконно-дверна система",
+    "imgLink": "https://framex.ua/wp-content/uploads/2021/09/framex-10-profile-window-01.jpg",
+    "widthProfile": "45мм",
+    "widthGlazing": "4-22мм"
+  },
+  {
+    "id": "2",
+    "name": "Framex 38",
+    "type": "Холодна віконно-дверна система",
+    "imgLink": "https://framex.ua/wp-content/uploads/2023/09/framex-38-profile-window.jpg",
+    "widthProfile": "38мм",
+    "widthGlazing": "4-22мм"
+  },
+  {
+    "id": "3",
+    "name": "Framex 46",
+    "type": "Холодна дверна система",
+    "imgLink": "https://framex.ua/wp-content/uploads/2021/09/framex-46-window-render.png",
+    "widthProfile": "46мм",
+    "widthGlazing": "4-22мм"
+  },
+  {
+    "id": "4",
+    "name": "Framex FT72",
+    "type": "Тепла віконно-дверна система",
+    "imgLink": "https://framex.ua/wp-content/uploads/2021/09/framex-ft72-windows-profile.jpg",
+    "widthProfile": "46мм",
+    "widthGlazing": "26-86мм"
+  },
+  {
+    "id": "5",
+    "name": "Framex F50",
+    "type": "Стійко-ригельна система",
+    "imgLink": "https://framex.ua/wp-content/uploads/2021/09/framex-f50-gluhe-sklinny-KK.png",
+    "widthProfile": "50мм",
+    "widthGlazing": "4-60мм"
+  }
+]

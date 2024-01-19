@@ -3,6 +3,7 @@ import sketch from "../assets/icons/sketch.png";
 import news from "../assets/icons/news.png";
 import chat from "../assets/icons/chat.png";
 import home from "../assets/icons/home.png";
+import left from "../assets/icons/left.png";
 
 export default {
   logo,
@@ -10,4 +11,5 @@ export default {
   news,
   chat,
   home,
+  left,
 };
