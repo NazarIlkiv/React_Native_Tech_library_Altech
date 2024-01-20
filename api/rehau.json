@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "name": "Rehau Euro-Design 60",
+    "type": "Бюджетна віконна система rehau",
+    "imgLink": "https://www.rehau.com/resource/image/273528/1x1/600/600/bbbd330fc50386b7634d5942936a5cb7/153BB4059BE990104B9D426A39392015/773-d005-171557-0-171557.jpg",
+    "widthProfile": "60мм",
+    "widthGlazing": "до 32мм"
+  },
+  {
+    "id": "2",
+    "name": "Rehau Euro-Design 70",
+    "type": "Тепла віконна система rehau",
+    "imgLink": "https://www.lop-realizace.cz/data/blob/storage-image_png-20180521102029-6802-euro-01.png",
+    "widthProfile": "70мм",
+    "widthGlazing": "до 40мм"
+  },
+  {
+    "id": "3",
+    "name": "Rehau Synego",
+    "type": "Преміум віконна система rehau",
+    "imgLink": "https://window.rehau.com/resource/image/1166574/1x1/400/400/38f6110cd3f6a57e11d8ab4020fd05dc/B88ED4AC8A9987EBA712D0DE626A6CBD/969-d123-114621.jpg",
+    "widthProfile": "80мм",
+    "widthGlazing": "до 52мм"
+  },
+  {
+    "id": "4",
+    "name": "Rehau Geneo Rau-Fipro X",
+    "type": "Преміум віконна система rehau",
+    "imgLink": "https://fasada.eu/wp-content/uploads/2017/10/geneo2_ok_362-600x600.jpg",
+    "widthProfile": "86мм",
+    "widthGlazing": "до 52мм"
+  }
+]

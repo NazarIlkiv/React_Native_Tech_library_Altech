@@ -8,7 +8,7 @@ import icons from "../../../constants/images";
 
 import { COLORS } from "../../../constants/theme";
 
-const aluminiumProfile = () => {
+const alum = () => {
   const router = useRouter();
 
   return (
@@ -41,4 +41,4 @@ const aluminiumProfile = () => {
   );
 };
 
-export default aluminiumProfile;
+export default alum;

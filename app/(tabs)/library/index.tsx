@@ -11,11 +11,11 @@ const index = () => {
   const buttonsData = [
     {
       text: "Алюмінієві системи",
-      link: "/library/aluminiumProfile",
+      link: "/library/alum",
     },
     {
       text: "ПВХ системи Rehau",
-      link: "/library/rehauProfile",
+      link: "/library/rehau",
     },
   ];
 

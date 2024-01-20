@@ -8,27 +8,10 @@ import icons from "../../../constants/images";
 
 import ScreenHeaderBtn from "../../../components/ui/ScreenHeaderBtn/ScreenHeaderBtn";
 
-const rehauProfile = () => {
-  const router = useRouter();
+import rehauData from "../../../api/rehau.json";
 
-  const buttonsData = [
-    {
-      text: "Rehau Euro-Design 60",
-      link: "/library/aluminiumProfile",
-    },
-    {
-      text: "Rehau Euro-Design 70",
-      link: "/library/rehauProfile",
-    },
-    {
-      text: "Rehau Synego",
-      link: "/library/rehauProfile",
-    },
-    {
-      text: "Rehau Geneo",
-      link: "/library/rehauProfile",
-    },
-  ];
+const rehau = () => {
+  const router = useRouter();
 
   return (
     <SafeAreaView
@@ -53,19 +36,28 @@ const rehauProfile = () => {
           ),
         }}
       />
-      {buttonsData.map((item, index) => (
+      {rehauData.map((item, index) => (
         <TouchableOpacity
           onPress={() => {
-            router.push(item.link);
+            router.push({
+              pathname: "/library/rehauSystems",
+              params: {
+                systemName: item.name,
+                systemType: item.type,
+                imgLink: item.imgLink,
+                wProfile: item.widthProfile,
+                wGlazing: item.widthGlazing,
+              },
+            });
           }}
           key={index}
           style={styles.systemButton}
         >
-          <Text style={styles.openLibBtnText}>{item.text}</Text>
+          <Text style={styles.openLibBtnText}>{item.name}</Text>
         </TouchableOpacity>
       ))}
     </SafeAreaView>
   );
 };
 
-export default rehauProfile;
+export default rehau;
