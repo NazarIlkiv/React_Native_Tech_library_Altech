@@ -36,13 +36,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   questionText: {
-    fontSize: 18,
-    marginBottom: 10,
+    fontSize: SIZES.xLarge,
+    fontFamily: FONT.medium,
+    marginBottom: 15,
     textAlign: "center",
-    color: "#333",
   },
   input: {
-    width: "70%",
+    width: 300,
+    height: "20%",
     borderWidth: 1,
     borderColor: "#ccc",
     borderRadius: 5,
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
   sendButton: {
     marginTop: 15,
     marginBottom: 15,
-    padding: 20,
+    padding: 15,
     justifyContent: "center",
     alignItems: "center",
     borderRadius: SIZES.medium,

@@ -34,7 +34,7 @@ export default function index() {
         }}
       />
 
-      <Text style={styles.title}>Contact Us</Text>
+      <Text style={styles.title}>Контакти</Text>
       <View style={styles.infoContainer}>
         <Text style={styles.label}>Номер телефону:</Text>
         <Text style={styles.text}>+380963629939</Text>
@@ -44,13 +44,8 @@ export default function index() {
         <Text style={styles.text}>Назар Ільків</Text>
       </View>
       <View style={styles.contactFormContainer}>
-        <Text style={styles.questionText}>
-          Якщо Ви маєте питання, напишіть його?
-        </Text>
-        <TextInput
-          style={styles.input}
-          placeholder="Напишіть своє питання тут"
-        />
+        <Text style={styles.questionText}>Маєте запитання?</Text>
+        <TextInput style={styles.input} placeholder="Ваше запитання" />
         <TouchableOpacity style={styles.sendButton}>
           <Text style={styles.sendButtonText}>Надіслати</Text>
         </TouchableOpacity>
