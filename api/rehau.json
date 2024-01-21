@@ -1,34 +1,52 @@
 [
   {
     "id": "1",
-    "name": "Rehau Euro-Design 60",
-    "type": "Бюджетна віконна система rehau",
+    "nameSystem": "Rehau Euro-Design 60",
+    "type": "Бюджетна віконна система Rehau",
     "imgLink": "https://www.rehau.com/resource/image/273528/1x1/600/600/bbbd330fc50386b7634d5942936a5cb7/153BB4059BE990104B9D426A39392015/773-d005-171557-0-171557.jpg",
-    "widthProfile": "60мм",
-    "widthGlazing": "до 32мм"
+    "constructionDept": "60мм",
+    "chambers": "3",
+    "glazingCapacity": "від 8 до 32мм",
+    "drafts": "https://drive.google.com/file/d/1Xs9nGLN7p0KoMwWyxXEPLq1px21IhZps/view?usp=sharing"
   },
   {
     "id": "2",
-    "name": "Rehau Euro-Design 70",
-    "type": "Тепла віконна система rehau",
+    "nameSystem": "Rehau Euro-Design 70",
+    "type": "Тепла віконна система Rehau",
     "imgLink": "https://www.lop-realizace.cz/data/blob/storage-image_png-20180521102029-6802-euro-01.png",
-    "widthProfile": "70мм",
-    "widthGlazing": "до 40мм"
+    "constructionDept": "70мм",
+    "chambers": "5",
+    "glazingCapacity": "від 24 до 40мм",
+    "drafts": "https://drive.google.com/file/d/1hEFPyOFN4-O9e3LFe_AHksAl5SLqSb7V/view?usp=sharing"
   },
   {
     "id": "3",
-    "name": "Rehau Synego",
-    "type": "Преміум віконна система rehau",
-    "imgLink": "https://window.rehau.com/resource/image/1166574/1x1/400/400/38f6110cd3f6a57e11d8ab4020fd05dc/B88ED4AC8A9987EBA712D0DE626A6CBD/969-d123-114621.jpg",
-    "widthProfile": "80мм",
-    "widthGlazing": "до 52мм"
+    "nameSystem": "Rehau Synego",
+    "type": "Преміум віконна система Rehau",
+    "imgLink": "https://fasada.eu/wp-content/uploads/2023/01/fasada_okna_pcv_rehau_02_570-600x600.jpg",
+    "constructionDept": "80мм",
+    "chambers": "7",
+    "glazingCapacity": "до 50мм",
+    "drafts": "https://drive.google.com/file/d/155G7NFUA19vePZ_aHtZzf6gssoAO6IkT/view?usp=sharing"
   },
   {
     "id": "4",
-    "name": "Rehau Geneo Rau-Fipro X",
-    "type": "Преміум віконна система rehau",
+    "nameSystem": "Rehau Synego Slide",
+    "type": "Підйомно-розсувна система Rehau",
+    "imgLink": "https://window.rehau.com/resource/image/1166576/1x1/400/400/f765a0aabe3f5b35218beb27836b580d/8A089363A4B203ACCF9797E46D6785EF/716-d016-1075348.jpg",
+    "constructionDept": "80мм-стулка, 156мм - рама",
+    "chambers": "6",
+    "glazingCapacity": "до 50мм",
+    "drafts": "https://drive.google.com/file/d/155G7NFUA19vePZ_aHtZzf6gssoAO6IkT/view?usp=sharing"
+  },
+  {
+    "id": "5",
+    "nameSystem": "Rehau Geneo Rau-Fipro X",
+    "type": "Преміум віконна система Rehau",
     "imgLink": "https://fasada.eu/wp-content/uploads/2017/10/geneo2_ok_362-600x600.jpg",
-    "widthProfile": "86мм",
-    "widthGlazing": "до 52мм"
+    "constructionDept": "86мм",
+    "chambers": "7",
+    "glazingCapacity": "до 52мм",
+    "drafts": "https://drive.google.com/file/d/155G7NFUA19vePZ_aHtZzf6gssoAO6IkT/view?usp=sharing"
   }
 ]

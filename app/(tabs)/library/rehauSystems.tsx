@@ -1,6 +1,17 @@
-import { SafeAreaView, Text, Image } from "react-native";
+import {
+  SafeAreaView,
+  Text,
+  Image,
+  ScrollView,
+  View,
+  ImageStyle,
+  TouchableOpacity,
+} from "react-native";
 import { useLocalSearchParams, Stack, useRouter } from "expo-router";
 import React from "react";
+import { Linking } from "react-native";
+
+import styles from "../../../components/rehauSystems/rehauSystems.style";
 
 import icons from "../../../constants/images";
 import { COLORS } from "../../../constants/theme";
@@ -8,24 +19,27 @@ import ScreenHeaderBtn from "../../../components/ui/ScreenHeaderBtn/ScreenHeader
 
 const rehauSystems = () => {
   const router = useRouter();
-  const { systemName, systemType, imgLink, wProfile, wGlazing } =
-    useLocalSearchParams<{
-      systemName: string;
-      systemType: string;
-      imgLink: string;
-      wProfile: string;
-      wGlazing: string;
-    }>();
+
+  const {
+    systemName,
+    systemType,
+    imgLink,
+    constructionDept,
+    chambers,
+    glazingCapacity,
+    drafts,
+  } = useLocalSearchParams<{
+    systemName: string;
+    systemType: string;
+    imgLink: string;
+    constructionDept: string;
+    chambers: string;
+    glazingCapacity: string;
+    drafts: string;
+  }>();
 
   return (
-    <SafeAreaView
-      style={{
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: COLORS.lightWhite,
-      }}
-    >
+    <SafeAreaView style={styles.container}>
       <Stack.Screen
         options={{
           headerStyle: { backgroundColor: COLORS.lightWhite },
@@ -35,17 +49,41 @@ const rehauSystems = () => {
           headerLeft: () => (
             <ScreenHeaderBtn
               dimension="60%"
-              handlePress={() => router.push("/library/rehau")}
+              handlePress={() => router.push("/library/")}
               iconUrl={icons.left}
             />
           ),
         }}
       />
-      <Text>{systemName}</Text>
-      <Text>{systemType}</Text>
-      <Image source={{ uri: imgLink }} style={{ width: 300, height: 300 }} />
-      <Text>{wProfile}</Text>
-      <Text>{wGlazing}</Text>
+      <ScrollView
+        contentContainerStyle={{
+          alignItems: "center",
+          padding: 16,
+        }}
+      >
+        <Text style={styles.systemTitle}>{systemName}</Text>
+        <Text style={styles.systemType}>{systemType}</Text>
+        <Image source={{ uri: imgLink }} style={styles.Img as ImageStyle} />
+        <View style={styles.featuresContainer}>
+          <Text style={styles.featuresText}>
+            Монтажна глибина: {constructionDept}
+          </Text>
+          <Text style={styles.featuresText}>К-сть камер: {chambers}</Text>
+          <Text style={styles.featuresText}>Заповнення: {glazingCapacity}</Text>
+        </View>
+        <TouchableOpacity
+          onPress={() => {
+            Linking.openURL(drafts);
+          }}
+          style={styles.openCatalogButton}
+        >
+          <Image
+            source={icons.sketch}
+            style={styles.openCatalogImg as ImageStyle}
+          />
+          <Text style={styles.openCatalogText}>Відкрити каталог</Text>
+        </TouchableOpacity>
+      </ScrollView>
     </SafeAreaView>
   );
 };

@@ -4,9 +4,8 @@ import { COLORS, SIZES, FONT } from "../../../constants/theme";
 
 const styles = StyleSheet.create({
   systemButton: {
-    marginTop: 20,
-
-    marginBottom: 20,
+    marginTop: 15,
+    marginBottom: 15,
     padding: 20,
     flexDirection: "row",
     justifyContent: "center",
