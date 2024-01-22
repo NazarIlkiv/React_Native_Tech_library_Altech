@@ -1,9 +1,8 @@
 import { View, Text, Image } from "react-native";
 import React from "react";
 import { Tabs } from "expo-router";
-
 import icons from "../../constants/images";
-import { COLORS, FONT, SIZES } from "../../constants/theme";
+import { COLORS, SIZES } from "../../constants/theme";
 
 export default function TabsLayout() {
   return (
@@ -52,7 +51,7 @@ export default function TabsLayout() {
                     color: focused ? COLORS.lightGrey : "black",
                   }}
                 >
-                  Home
+                  Головна
                 </Text>
               </View>
             );
@@ -90,7 +89,7 @@ export default function TabsLayout() {
                     color: focused ? COLORS.lightGrey : "black",
                   }}
                 >
-                  Library
+                  Бібліотека
                 </Text>
               </View>
             );
@@ -128,7 +127,7 @@ export default function TabsLayout() {
                     color: focused ? COLORS.lightGrey : "black",
                   }}
                 >
-                  News
+                  Новини
                 </Text>
               </View>
             );
@@ -166,7 +165,7 @@ export default function TabsLayout() {
                     color: focused ? COLORS.lightGrey : "black",
                   }}
                 >
-                  Contact
+                  Підтримка
                 </Text>
               </View>
             );

@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { FontAwesome } from "@expo/vector-icons";
-
 import { Stack } from "expo-router";
 
 export default function RootLayout() {

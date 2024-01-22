@@ -8,10 +8,10 @@ import {
 import React from "react";
 import { Stack, useRouter } from "expo-router";
 import ScreenHeaderBtn from "../../../components/ui/ScreenHeaderBtn/ScreenHeaderBtn";
-import { COLORS, SIZES, FONT } from "../../../constants/theme";
+import { COLORS } from "../../../constants/theme";
 import icons from "../../../constants/images";
 
-import styles from "../../../components/contact/Contact.style";
+import styles from "../../../components/contact/contact.style";
 
 export default function index() {
   const router = useRouter();
@@ -27,7 +27,7 @@ export default function index() {
           headerLeft: () => (
             <ScreenHeaderBtn
               dimension="60%"
-              handlePress={() => router.push("/library/")}
+              handlePress={() => router.push("/home")}
               iconUrl={icons.left}
             />
           ),
@@ -45,7 +45,7 @@ export default function index() {
       </View>
       <View style={styles.contactFormContainer}>
         <Text style={styles.questionText}>Маєте запитання?</Text>
-        <TextInput style={styles.input} placeholder="Ваше запитання" />
+        <TextInput value="" style={styles.input} placeholder="Ваше запитання" />
         <TouchableOpacity style={styles.sendButton}>
           <Text style={styles.sendButtonText}>Надіслати</Text>
         </TouchableOpacity>

@@ -1,4 +1,4 @@
-import { SafeAreaView, Button } from "react-native";
+import { SafeAreaView } from "react-native";
 import React from "react";
 import { Redirect } from "expo-router";
 

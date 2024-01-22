@@ -29,7 +29,7 @@ const index = () => {
           headerLeft: () => (
             <ScreenHeaderBtn
               dimension="60%"
-              handlePress={() => router.push("/library/")}
+              handlePress={() => router.push("/home")}
               iconUrl={icons.left}
             />
           ),
